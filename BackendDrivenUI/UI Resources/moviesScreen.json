@@ -1,0 +1,19 @@
+
+{
+    "pageTitle": "Movies",
+    "templates": [
+        {
+            "type": "roundedImage",
+            "data": {
+                "title": "Batman Returns",
+                "imageURL": "https://m.media-amazon.com/images/M/MV5BMTdjZTliODYtNWExMi00NjQ1LWIzN2MtN2Q5NTg5NTk3NzliL2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg"
+            }
+        },
+        {
+            "type": "gradientBox",
+            "data": {
+                "title": "Batman LEGO",
+            }
+        }
+    ]
+}

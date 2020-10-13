@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject private var vm: MoviesViewModel = MoviesViewModel()
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        VStack {
+            ForEach(vm.templates, id: \.uniqueId) { template in
+                template.render() 
+            }
+        }
+        
+        .onAppear(perform: {
+            vm.load()
+        })
     }
 }
 
